@@ -37,7 +37,7 @@ On the resulting dialog, provide a name for the field and paste the relevant scr
 # License
 
 ```
-Copyright 2020 Nuix
+Original Code Copyright 2020 Nuix
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
