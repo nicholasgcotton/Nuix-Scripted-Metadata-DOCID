@@ -1,4 +1,4 @@
-# Scripted Parent DOCID for Nuix Workstation Release 1.0 2022-04-29
+# Scripted Parent DOCID for Nuix Workstation - Release 1.0 2022-04-29
 # Finds the valid physical file DOCID where the DOCID starts with a unique string defined by document_id_basename.
 # This will never work if your item isn't itself a DOCID or the descendent of one, but that's outside the use-case scenario.
 # Based on: https://github.com/Nuix/Scripted-Metadata-Profile-Fields 
@@ -94,7 +94,7 @@ else
 		physical_item_path = physical_item.getLocalisedPathNames.join("/")
 	end
 	item_path = $current_item.getLocalisedPathNames.join("/").gsub(physical_item_path+"/","") # original
-# Nuix item_path gets confused by some entries and returns [Unnamed Container] for some .EML and .MSG items. 
+#       Nuix item_path gets confused by some entries and returns [Unnamed Container] for some .EML and .MSG items. 
 #	Ruby's built in method pathname will work though, as it just treats it all like a string. 
 	Pathname.new(item_path).ascend do |checkpath|
 	if checkpath.basename.to_s.start_with?(document_id_basename)
