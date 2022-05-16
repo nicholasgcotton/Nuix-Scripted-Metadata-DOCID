@@ -5,6 +5,8 @@ e.g. when you are reviewing data such as "\\Natives\VOL00001\DOCID12345.msg\Re: 
 
 Script must be updated with the current DOCID basename to work.
 
+For a list of other useful Nuix scripts, see: https://github.com/nicholasgcotton/Nuix-Scripts
+
 Based on [ScriptedField_FullPath.rb](https://github.com/Nuix/Scripted-Metadata-Profile-Fields/blob/master/Ruby/Pathing/ScriptedField_FullPath.rb) from:
 
 [Scripted Metadata Profile Fields](https://github.com/Nuix/Scripted-Metadata-Profile-Fields)
