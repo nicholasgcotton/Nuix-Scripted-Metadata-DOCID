@@ -1,9 +1,13 @@
 # Scripted Metadata for DOCID
-Find the DOCID of the current item using scripted metadata. Intended for reviewing EDRM/Relativity/Concordance formatted data in Nuix Workstation. 
+Find the DOCID of the current item using scripted metadata. Intended for reviewing [EDRM](https://edrm.net/resources/frameworks-and-standards/edrm-model/edrm-stages-standards/edrm-processing-standards-guide-version-2/)/Relativity/Concordance formatted data in Nuix Workstation. 
 
-e.g. when you are reviewing data such as "\\Natives\VOL00001\DOCID12345.msg\Re: Contract Dispute" Nuix Workstation will return the email item as the name, that is "Re: Contract Dispute" but it may also be helpful to keep track of the EDRM style DOCID, e.g. DOCID12345.msg.
+e.g. when you are reviewing data such as "\\Natives\VOL00001\DOCID012345.msg\Re: Contract Dispute" Nuix Workstation will return the email item as the name, that is "Re: Contract Dispute" but it may also be helpful to keep track of the EDRM style DOCID, e.g. DOCID012345.msg.
 
-Script must be updated with the current DOCID basename to work.
+**Important Note:** Script must be updated with the current DOCID basename to work.
+
+**Instructions**: Open [Scripted Parent DOCID.rb](https://github.com/nicholasgcotton/Nuix-Scripted-Metadata-DOCID/blob/main/Scripted%20Parent%20DOCID.rb) in a text editor and at line 7 change "DOCID0" to reflect the base filename for your document series.
+
+e.g. Change from `document_id_basename = "DOCID0"` to `document_id_basename = "DOCUMENT_ID"`where you file names all start with "DOCUMENT_ID".
 
 For a list of other useful Nuix scripts, see: https://github.com/nicholasgcotton/Nuix-Scripts
 
